@@ -25,7 +25,6 @@ window.addEventListener("DOMContentLoaded", function() {
   if (timestamp !== 'null') {
     url += '&start=' + timestamp;
   }
-  console.log(url);
   var elementString = '<iframe src="'+ url + '" frameborder="0" allowfullscreen/>';
 
   document.getElementById("video-container").innerHTML = elementString;
