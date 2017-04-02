@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube PIP",
+  "description": "This extension allows you to open YouTube videos in a popup window",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "app.js"
+    ]
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "https://*.youtube.com/"
+  ]
+}
