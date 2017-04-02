@@ -40,13 +40,15 @@ function onLinkClicked(link) {
     if (typeof queryParams.t !== 'undefined') {
       timestamp = queryParams.t;
     }
-    
-    chrome.windows.create({
-      url: 'pip.html?videoId=' + videoId + '&timestamp=' + timestamp,
-      type: 'popup',
-      width: 560,
-      height: 365,
-    });
+
+    if (videoId !== null) {
+      chrome.windows.create({
+        url: 'pip.html?videoId=' + videoId + '&timestamp=' + timestamp,
+        type: 'popup',
+        width: 560,
+        height: 365,
+      });
+    }
   }
 }
 
